@@ -88,7 +88,7 @@ class StreamableViewController: BaseElloViewController {
     }
 
     func calculateDefaultTopInset() -> CGFloat {
-        if AppSetup.shared.isIphoneX {
+        if Globals.isIphoneX {
             return 44
         }
         else {

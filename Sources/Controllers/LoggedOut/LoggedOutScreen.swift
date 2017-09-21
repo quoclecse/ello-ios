@@ -15,11 +15,11 @@ class LoggedOutScreen: Screen, LoggedOutScreenProtocol {
         static let textMargin: CGFloat = 20
 
         static private func calculateHeight() -> CGFloat {
-            return 60 + AppSetup.shared.bestBottomMargin
+            return 60 + Globals.bestBottomMargin
         }
         static private func calculateInsets() -> UIEdgeInsets {
             var insets = UIEdgeInsets(all: 10)
-            insets.bottom = AppSetup.shared.bestBottomMargin
+            insets.bottom = Globals.bestBottomMargin
             return insets
         }
     }

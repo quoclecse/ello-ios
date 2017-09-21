@@ -343,7 +343,7 @@ class ProfileScreen: StreamableScreen, ProfileScreenProtocol {
             }
             else {
                 effectsTop = 0
-                effectsHeight = AppSetup.shared.isIphoneX ? Size.profileButtonsContainerTallHeight : Size.profileButtonsContainerViewHeight
+                effectsHeight = Globals.isIphoneX ? Size.profileButtonsContainerTallHeight : Size.profileButtonsContainerViewHeight
             }
 
             self.updateNavBars(effectsTop: effectsTop, effectsHeight: effectsHeight)

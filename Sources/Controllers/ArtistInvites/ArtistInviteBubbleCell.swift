@@ -303,7 +303,7 @@ extension ArtistInviteBubbleCell.Config {
     }
 
     private func dateTextRemaining(_ closedAt: Date) -> String {
-        let now = AppSetup.shared.now
+        let now = Globals.now
         let secondsRemaining = Int(closedAt.timeIntervalSince(now))
         let daysRemaining = Int(secondsRemaining / 24 / 3600)
         if daysRemaining > 1 {

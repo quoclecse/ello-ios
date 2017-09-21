@@ -173,7 +173,7 @@ extension SearchScreen {
 
     func hideNavBars() {
         elloAnimate {
-            if AppSetup.shared.isIphoneX {
+            if Globals.isIphoneX {
                 self.searchControlsContainerHeight.update(offset: Size.searchControlsTallHeight)
                 self.searchControlsContainer.frame.size.height = Size.searchControlsTallHeight
             }

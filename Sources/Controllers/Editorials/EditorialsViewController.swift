@@ -123,7 +123,7 @@ extension EditorialsViewController: EditorialToolsResponder {
             let editorial = jsonable as? Editorial
         else { return }
 
-        editorial.invite = (emails: "", sent: AppSetup.shared.now)
+        editorial.invite = (emails: "", sent: Globals.now)
         let emails: [String] = emailString.replacingOccurrences(of: "\n", with: ",").split(",").map { $0.trimmed() }
         InviteService().sendInvitations(emails).ignoreErrors()
     }

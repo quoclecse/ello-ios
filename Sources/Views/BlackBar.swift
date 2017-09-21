@@ -7,7 +7,7 @@ class BlackBar: View {
         static let height: CGFloat = calculateHeight()
 
         static private func calculateHeight() -> CGFloat {
-            return AppSetup.shared.statusBarHeight
+            return Globals.statusBarHeight
         }
     }
 
